@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../Images/cityBgDark.png");
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+
+/* Center column / main body */
+div.mainBody {
+    height: 400vh;
+    width: 40%;
+    margin-top: 5%;
+    background-color: rgba(105, 44, 44, 0.9);
+}
+    /* PAGE ONE: About Me */
+    div.pageOne {
+        height: 85vh;
+    }
+
+        /* Title Text */
+        div.pageOne h1 {
+            width: 90%;
+            padding: 20% 0 10% 10%;
+
+            color: white;
+            font-size: 5em;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+            /* Last name / smaller text */
+            span.smallText {
+                font-size: 40%;
+                font-weight: 400;
+            }
+
+        /* About me box PAGE ONE */
+        div.aboutMeBox {
+            width: 85%;
+            height: fit-content;
+            margin: 0 0 0 25%;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            background-color: rgb(155, 67, 67);
+        }
+
+            /* Left Section */
+            div.aboutMeBoxLeftCol {
+                width: 60%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                font-family: sans-serif;
+                color: rgb(210, 210, 210);
+            }
+
+                /* Heading */
+                div.aboutMeBoxLeftCol h3 {
+                    width: fit-content;
+                    height: fit-content;
+                    padding: 7.5% 2.5% 0 2.5%;
+                    
+                    font-size: 2em;
+                    text-align: center;
+                    border-bottom: 2px solid white;
+                }
+                /* About me text */
+                div.aboutMeBoxLeftCol p {
+                    width: 90%;
+                    padding-block: 2.5% 1%;
+
+                    font-size: 0.85em;
+                    line-height: 175%;
+                }
+
+                /* Skills button / anchor */
+                div.aboutMeBoxLeftCol a.skillsAnchor {
+                    border-radius: 5px;
+                    padding: 3% 7.5% 3% 7.5%;
+
+                    text-decoration: none;
+                    color: rgb(210, 210, 210);
+                    background-color: rgb(199, 113, 0);
+
+                    align-self: flex-start;
+                    margin: 5%;
+                
+                    transition: 125ms;
+                }
+                    /* Button hover effect */
+                    a.skillsAnchor:hover {
+                        transform: scale(1.05, 1.05);
+                        box-shadow: 2px 2px 4px #202020;
+                    }
+
+            /* Right Section */
+            div.aboutMeBoxRightCol {
+                width: 40%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                /* Right Icon */
+                div.aboutMeBoxRightCol img {
+                    width: 80%;
+                    border-radius: 50%;
+                    box-shadow: 2px 2px 10px black;
+                }
+
+    /* Skills Page */
+    div.pageTwo {
+        height: 135vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        div.pageTwo h2 {
+            width: 90%;
+            padding-left: 10%;
+
+            color: white;
+            font-size: 4em;
+            font-family: sans-serif;
+        }
+
+        /* Skills Progress Bar Wrapper */
+        div.skillsWrapper {
+            width: 100%;
+            height: 70%;
+            padding-block: 1.25%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+            div.skillsWrapper h3 {
+                padding-block: 2.5%;
+
+                color: white;
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+
+
+
+    /* Projects Page */
+    div.pageThree {
+        height: 90vh;
+        width: 100%;
+        transform: scale(1.125, 1.125);
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Title */
+    div.pageThree h2 {
+        font-size: 4em;
+        color: white;
+        font-family: sans-serif;
+
+        padding-left: 12.5%;
+        align-self: flex-start;
+    }
+
+
+
+    /* Contact Me Page */
+    div.pageFour {
+        height: 90vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        row-gap: 5%;
+    }
+        /* Title */
+        div.pageFour h2 {
+            color: white;
+            padding-left: 10%;
+
+            font-size: 4em;
+            font-family: sans-serif;
+
+            align-self: flex-start;
+        }
+
+
+        /* Contact Me Form */
+        div.pageFour form.contactMeForm {
+            width: 60%;
+            height: 50%;
+
+            padding: 2.5% 0 2.5% 0;
+            border-radius: 5px 15px;
+            background-color: rgb(138, 59, 59);
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+            /* Form Inputs */
+            form.contactMeForm input {
+                width: 80%;
+                height: 7.5%;
+                padding: 1% 0 1% 5%;
+
+                color: white;
+                font-size: 1em;
+                font-family: sans-serif;
+
+                border: 0;
+                border-radius: 5px 15px;
+                background-color: rgb(172, 85, 85);
+            }
+
+            /* Message Input */
+            form.contactMeForm textarea {
+                width: 80%;
+                padding: 2.5% 0 0 5%;
+
+                resize: none;
+                color: white;
+                font-size: 1em;
+                font-family: sans-serif;
+
+                border: 0;
+                border-radius: 5px 15px;
+                background-color: rgb(172, 85, 85);
+            }
+
+                /* Inputs Selected */
+                form.contactMeForm input:focus, form.contactMeForm textarea:focus {
+                    outline: none;
+                    box-shadow: 0 0 25px rgb(158, 30, 30), 0 0 10px white;
+                }
+                /* Placeholders */
+                input::placeholder, textarea::placeholder {color: rgb(182, 182, 182);}
+            
+                /* Send Message Button */
+            form.contactMeForm button {
+                font-size: 1.25em;
+                padding: 2.5% 5% 2.5% 5%;
+
+                border: 0;
+                border-radius: 5px 15px;
+
+                color: rgb(210, 210, 210);
+                background-color: rgb(199, 113, 0);
+
+                margin-left: 7.5%;
+                align-self: flex-start;
+
+                transition: 125ms;
+            }
+
+                /* Button hover effect */
+                form.contactMeForm button:hover {
+                    transform: scale(1.05, 1.05);
+                    box-shadow: 2px 2px 4px #202020;
+                }
+
+
+
+
+
+
+/* Footer */
+footer {
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /* Footer Text */
+    footer h6 {
+        color: white; 
+
+        font-weight: 500;
+        font-size: 0.9em;
+        font-family: sans-serif;
+    }
+
+
+
+
+/* LeetCode Chart*/
+div#chart_div {
+    height: 300px;
+}

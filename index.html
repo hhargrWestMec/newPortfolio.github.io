@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Hargreaves - Portfolio</title>
+
+    <!-- Main CSS Link -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+
+    <!-- JQuery Progress Bar Links -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- Custom JQuery JS Scripts & CSS for Progress Bars -->
+    <script src="./Assets/Scripts/progressBars.js"></script>
+    <link rel="stylesheet" href="./Assets/CSS/progressBars.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Assets/Images/person.jpg" type="image/x-icon">
+
+    <!-- Projects Carousel -->
+    <link rel="stylesheet" href="./Assets/CSS/carousel.css">
+    <script defer src="./Assets/Scripts/carousel.js"></script>
+
+    <!-- Leet Code Chart -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./Assets/Scripts/chart.js"></script>
+
+</head>
+<body>
+
+    <div class="mainBody">
+
+        <!-- Title & About Me Page -->
+        <div class="pageOne">
+            <!-- Title Text -->
+            <h1>Hayden <span class="smallText">Hargreaves</span></h1>
+
+            <!-- Short Description Box -->
+            <div class="aboutMeBox">
+                <!-- Left Column -->
+                <div class="aboutMeBoxLeftCol">
+                    <h3>Junior Developer</h3>
+
+                    <p>
+                        My name is Hayden Hargreaves and I am a junior developer with 2 years of experience. Throughout my journey I have gained an HTML5 Application Development certification through the West-MEC Coding program.
+                    </p>
+
+                    <a href="#skillPage" class="skillsAnchor"> Skills </a>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="aboutMeBoxRightCol">
+                    <!-- HTML Code Image -->
+                    <img src="./Assets/Images/code.jpg" alt="Image of HTML code" />
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Skills Page -->
+        <div class="pageTwo" id="skillPage">
+
+            <h2>My Skills</h2>
+
+            <!-- Skills Progress Bars -->
+            <div class="skillsWrapper">
+                <h3>Languages</h3>
+                <div id="HTMLProgressBar" class="skillBar" title="85/100"><div class="progressLabel">HTML</div></div>
+                <div id="CSSProgressBar" class="skillBar" title="60/100"><div class="progressLabel">CSS</div></div>
+                <div id="JavaScriptProgressBar" class="skillBar" title="75/100"><div class="progressLabel">Javascript</div></div>
+                <div id="TypeScriptProgressBar" class="skillBar" title="50/100"><div class="progressLabel">Typescript</div></div>
+                <div id="PythonProgressBar" class="skillBar" title="30/100"><div class="progressLabel">Python</div></div>
+                <div id="JavaProgressBar" class="skillBar" title="15/100"><div class="progressLabel">Java</div></div>
+            
+                <h3>Frameworks & Libraries</h3>
+                <div id="BootStrapProgressBar" class="skillBar" title="50/100"><div class="progressLabel">BootStrap</div></div>
+                <div id="JQueryProgressBar" class="skillBar" title="60/100"><div class="progressLabel">JQuery</div></div>
+
+                <h3>LeetCode Problems</h3>
+                <div id="chart_div"></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Projects Page --> 
+        <div class="pageThree">
+
+            <h2>Projects</h2>
+
+            <!-- Carousel Container -->
+            <div class="carousel"></div>
+
+        </div>
+
+
+        <!-- Contact Me Page -->
+        <div class="pageFour">
+            <!-- Contact Me Title -->
+            <h2> Contact Me </h2>
+
+            <!-- Contact Me Form -->
+            <form class="contactMeForm">    
+                <!-- Name -->
+                <input type="text" name="yourNameInput" placeholder="Your name" pattern="[a-zA-z\s]{1,}" title="Name must contain letters and spaces only." required />
+                <!-- Email -->
+                <input type="email" name="emailInput" placeholder="Email" required />
+                <!-- Message -->
+                <textarea name="messageInput" cols="30" rows="10" placeholder="Message" pattern="[.]{1,}" title="Message must not be empty." required></textarea>
+                <!-- Send Button -->
+                <button type="submit"> Send Message </button>
+            </form>
+
+    
+
+        </div>
+
+    </div>
+
+    <footer>
+        <h6>Copyright &copy; 2023 Hayden Hargreaves | Inspired by TemplateMo </h6>
+    </footer>
+
+ 
+</body>
+</html>
