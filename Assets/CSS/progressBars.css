@@ -1,0 +1,34 @@
+/* JQuery Styles for Bar Labels */
+.progressLabel {
+    top: 4px;
+    width: 100%;
+    position: absolute;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.ui-progressbar {
+    position: relative;
+}
+
+/* Progress Bar VALUE Style */
+.ui-progressbar-value {
+    background-color: rgb(250, 180, 180);
+}
+
+
+/* Progress Bars */
+.skillBar {
+    height: 2em;
+    width: 80%;
+    box-shadow: 2px 2px 4px black;
+    transition: 300ms;
+}
+
+.skillBar:hover {
+    transform: scale(1.02);
+    box-shadow: 4px 4px 8px black;
+}
